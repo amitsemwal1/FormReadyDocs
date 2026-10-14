@@ -207,6 +207,31 @@ If you have questions, concerns, or requests regarding this Privacy Policy or th
 
 We will review privacy-related inquiries and respond as appropriate.
 
+## 14. Advertising and Google AdMob
+
+FormReady offers a Free version supported by advertisements and an optional Pro upgrade.
+
+The Free version uses Google AdMob, provided by Google, to display banner advertisements on the Home screen. FormReady Pro does not display advertisements while the user's Pro entitlement is active.
+
+Google AdMob may collect and process information such as:
+
+- IP address, which may be used to estimate approximate location.
+- Device and advertising identifiers, including the Android Advertising ID where available.
+- App interactions and advertising engagement information.
+- Diagnostic and performance information.
+
+Google may use this information for advertising, analytics, fraud prevention, security, and related purposes.
+
+FormReady uses Google's User Messaging Platform (UMP) to manage applicable advertising consent and privacy choices. Depending on the user's location and applicable laws, the app may display a consent or privacy message. Where required, users can access privacy choices through Settings.
+
+FormReady processes selected photos and signatures locally on the device. The app does not send the content of those selected images to Google AdMob for advertising.
+
+Learn more:
+
+- Google Privacy Policy: https://policies.google.com/privacy
+- How Google uses information from apps and sites: https://policies.google.com/technologies/partner-sites
+
+For privacy-related questions, contact: codenotlie@gmail.com
 ---
 
 **FormReady – Photo & Signature Formatter**
