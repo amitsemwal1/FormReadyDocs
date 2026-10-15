@@ -34,15 +34,17 @@ Saving uses Android's Storage Access Framework to create a new document at a des
 
 Sharing uses Android's share sheet and a restricted content URI with temporary read access to a prepared output copy. The recipient app or storage provider you select can process, transmit or retain that file under its own terms. A cloud destination or messaging app may upload it. FormReady does not control that recipient's delivery, encryption, retention or deletion, and does not automatically send your selected images to recipients.
 
-## 4. Free advertising and optional rewarded batches
+## 4. Advertising, Google AdMob and optional rewarded batches
 
-The Free version uses Google AdMob through the Google Mobile Ads SDK. It can display an eligible banner on Home only after an adult age-category choice and successful applicable consent checks. Advertising is off for the 13–17 category, an unanswered choice and “Prefer not to answer.” FormReady does not place banners on photo/signature editors, Crop or Result/Export, or automatically show interstitial or app-open advertisements.
+The Free version uses Google AdMob through the Google Mobile Ads SDK. It can display an eligible banner on Home only after an adult age-category choice and successful applicable consent checks. No new app-controlled banner or rewarded-ad requests are made for the 13–17 category, an unanswered choice or “Prefer not to answer.” FormReady does not place banners on photo/signature editors, Crop or Result/Export, or automatically show interstitial or app-open advertisements.
 
 Eligible adult Free users can optionally choose to watch an ad to earn **one batch credit for one processing operation of up to three images**. The offer is disclosed before the ad; the user chooses whether to load and show it. A rewarded creative can be a video, playable or another supported format; a video is not guaranteed.
 
 A credit is awarded only after the SDK's earned-reward callback, not simply because an ad closes. Loading failures, lack of applicable consent or unavailable ads do not prevent ordinary Free single-image editing, processing, saving or sharing. Previously earned credits can be used without a new ad or internet connection.
 
 Verified Pro users have an ad-free application experience: FormReady does not display new Home banners or initiate rewarded advertisements while that entitlement is active. Advertising/consent code remains in the application, and explicit privacy choices or Google Play purchase checks may still use the internet. The app does not automatically refresh advertising consent while Pro is active. An already-started Free request or full-screen ad cannot always be withdrawn immediately when entitlement changes.
+
+See [Section 5](#5-earned-credit-storage-and-limitations) for credit accounting, [Section 6](#6-google-advertising-and-consent-data) for AdMob data processing, [Section 7](#7-consent-and-available-privacy-controls) for UMP consent and privacy choices, and [Section 10](#10-permissions-and-third-parties) for Google privacy links. Age-category details are in [Section 11](#11-childrens-privacy).
 
 ## 5. Earned credit storage and limitations
 
@@ -57,11 +59,11 @@ Unused credits do not automatically expire in the app. Clearing app data or unin
 Google and eligible advertising partners may collect and process information through advertising/consent services, subject to applicable choices and their policies. Google's Mobile Ads SDK disclosure includes:
 
 - IP address, which may be used to estimate approximate location.
-- Advertising identifiers, app-set identifiers and applicable device/account identifiers.
+- Advertising identifiers, including the Android Advertising ID where available, app-set identifiers and applicable device/account identifiers.
 - App and ad interactions, such as launches, taps, ad views and rewarded-ad interactions.
 - Diagnostic and performance information, such as loading time, hang rate and energy usage.
 
-Google describes advertising, analytics and fraud prevention as purposes for SDK processing. Consent services also handle privacy-choice signals and technical information needed to present applicable messages. FormReady does not directly request GPS location or use your selected photos, signatures or custom preset names as ad-request content.
+Google describes advertising, analytics and fraud prevention as purposes for SDK processing. Google may also use this information for security and related purposes under its policies. Consent services also handle privacy-choice signals and technical information needed to present applicable messages. FormReady does not directly request GPS location or use your selected photos, signatures or custom preset names as ad-request content.
 
 The SDK's network processing is not the same as local image processing. Google and advertising partners determine handling and retention under their own policies and applicable agreements. This policy does not promise that all SDK information is immediately deleted, stored only in memory or never used across services. Advertising partners and purposes may be described in the consent form's partner list.
 
@@ -74,6 +76,8 @@ For the eligible adult advertising path, FormReady uses Google's User Messaging 
 When available, open **Home → Settings → Privacy choices** to reopen the applicable Google form and change or withdraw choices. This entry is shown when UMP requires it; it may not appear in every region. The Settings **Privacy policy** entry opens this page.
 
 UMP permitting an ad request does not by itself mean you agreed to personalized advertising. Depending on choices and SDK eligibility, limited or non-personalized ads may still be served. Changing advertising choices does not remove your earned credits or prevent ordinary local image work.
+
+You control which photos and signatures you import, whether to save or share processed results, which destination receives them, whether to purchase optional Pro functionality, and whether to retain or delete locally stored information through the controls described in Section 9. Free single-image editing, processing, saving and sharing do not require a Pro purchase.
 
 You can also manage advertising identifiers and available ad-privacy settings through Android and Google controls. Android options and names vary by version. Deleting or resetting an advertising ID does not necessarily stop every form of SDK processing or delete previously retained third-party data.
 
@@ -121,7 +125,7 @@ Android file providers, recipient apps and browsers you choose have their own pr
 
 ## 11. Children's privacy
 
-FormReady is intended for teenagers aged 13–17 and adults, as selected by the developer for its Google Play target audience. It is not intended for children under 13. It is a general-purpose image-formatting utility without a child-specific mode. The app offers three self-declared age categories: 13–17, 18 or older, and Prefer not to answer, with an option to skip. This choice is used only for advertising eligibility and is not verified identity. We do not collect date of birth or identity documents. The category and policy version are stored locally; the raw category is not sent as custom advertising data. Standard Google consent/ad-treatment parameters can convey eligibility for the allowed adult path.
+FormReady is intended for teenagers aged 13–17 and adults, as selected by the developer for its Google Play target audience. It is not intended for children under 13. It is a general-purpose image-formatting utility without a child-specific mode. The app does not intentionally request children's personal information. The app offers three self-declared age categories: 13–17, 18 or older, and Prefer not to answer, with an option to skip. This choice is used only for advertising eligibility and is not verified identity. We do not collect date of birth or identity documents. The category and policy version are stored locally; the raw category is not sent as custom advertising data. Standard Google consent/ad-treatment parameters can convey eligibility for the allowed adult path.
 
 Teen, unanswered and undisclosed categories receive no new app-controlled banner or rewarded requests or automatic advertising consent solicitation. Eligible adult requests use a G-rated content cap and real UMP eligibility checks. Ordinary image tools, existing earned credits and Pro access remain usable regardless of the choice. Change it through Settings → Age category; applicable existing Privacy choices remain accessible. We do not claim that self-declaration or these restrictions establish compliance with every regional rule for minors.
 
@@ -129,65 +133,9 @@ If you are a parent or guardian with a privacy concern involving a child's use, 
 
 ## 12. Security, changes and contact
 
-FormReady uses Android private app storage, bounded processing and restricted content-URI sharing to help protect local files. It does not guarantee absolute security of a device, operating system, recipient or third-party service. Keep your device updated and protect access to it.
+FormReady uses Android private app storage, bounded processing and restricted content-URI sharing to help protect local files. It does not guarantee absolute security of a device, operating system, recipient or third-party service. Keep your device updated and protect access to it with an appropriate screen lock.
 
-Changes to application functionality or third-party services may require updates to this policy. Revisions will appear at the same public URL with an updated date.
-
-You can manage information stored by FormReady by:
-
-- Removing images or processing results using available application controls.
-- Deleting custom presets.
-- Clearing FormReady's application data through Android settings.
-- Uninstalling FormReady.
-- Deleting exported files from their selected storage locations.
-
-Clearing application data or uninstalling FormReady generally removes its locally stored private application data, subject to Android's system storage and backup behavior.
-
-Files previously exported or shared with other applications may need to be deleted separately.
-
-FormReady does not currently provide a developer-operated online user account requiring a separate account-deletion procedure.
-
-## 9. Data Security
-
-We consider privacy and security when designing FormReady.
-
-The application uses Android's application storage protections and supported file-sharing mechanisms to help protect locally stored files.
-
-Image sharing uses Android-supported content access and permissions rather than unrestricted access to private application files.
-
-However, no software or device-storage system can guarantee absolute security.
-
-We recommend keeping your Android device updated and protecting it with an appropriate screen lock.
-
-## 10. Children's Privacy
-
-FormReady is a general-purpose image-formatting utility and is not specifically designed for children.
-
-The application does not require account registration or intentionally request children's personal information.
-
-If you believe a privacy concern involving a child has arisen through the use of FormReady, please contact us using the email address provided below.
-
-## 11. Your Privacy Choices
-
-You control which photos and signatures you select for processing.
-
-You can choose:
-
-- Whether to import an image into FormReady.
-- Whether to save or share processed results.
-- Which destination receives an exported image.
-- Whether to purchase optional Pro functionality.
-- Whether to retain or delete locally stored application information.
-
-Premium functionality is optional. Free image-processing features do not require a Pro purchase.
-
-## 12. Changes to This Privacy Policy
-
-We may update this Privacy Policy when application functionality changes, additional services are introduced, or legal and regulatory requirements change.
-
-Updated versions will be published at the same Privacy Policy URL with a revised "Last Updated" date.
-
-We encourage users to review this page periodically.
+Changes to application functionality, third-party services or legal and regulatory requirements may require updates to this policy. Revisions will appear at the same public URL with a revised “Last updated” date. Please review this page periodically.
 
 ## 13. Contact Us
 
@@ -198,31 +146,6 @@ If you have questions, concerns, or requests regarding this Privacy Policy or th
 
 We will review privacy-related inquiries and respond as appropriate.
 
-## 14. Advertising and Google AdMob
-
-FormReady offers a Free version supported by advertisements and an optional Pro upgrade.
-
-The Free version uses Google AdMob, provided by Google, to display banner advertisements on the Home screen. FormReady Pro does not display advertisements while the user's Pro entitlement is active.
-
-Google AdMob may collect and process information such as:
-
-- IP address, which may be used to estimate approximate location.
-- Device and advertising identifiers, including the Android Advertising ID where available.
-- App interactions and advertising engagement information.
-- Diagnostic and performance information.
-
-Google may use this information for advertising, analytics, fraud prevention, security, and related purposes.
-
-FormReady uses Google's User Messaging Platform (UMP) to manage applicable advertising consent and privacy choices. Depending on the user's location and applicable laws, the app may display a consent or privacy message. Where required, users can access privacy choices through Settings.
-
-FormReady processes selected photos and signatures locally on the device. The app does not send the content of those selected images to Google AdMob for advertising.
-
-Learn more:
-
-- Google Privacy Policy: https://policies.google.com/privacy
-- How Google uses information from apps and sites: https://policies.google.com/technologies/partner-sites
-
-For privacy-related questions, contact: codenotlie@gmail.com
 ---
 
 **FormReady – Photo & Signature Formatter**
